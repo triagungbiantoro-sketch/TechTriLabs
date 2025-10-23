@@ -27,13 +27,28 @@
       text-align: center;
     }
 
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .header-content img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     header p {
       font-size: 1.1rem;
+      margin-bottom: 10px;
     }
 
     /* Navbar */
@@ -41,7 +56,7 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     nav a {
@@ -144,20 +159,27 @@
         flex-direction: column;
         align-items: center;
       }
+      .header-content {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Techtrilabs</h1>
-    <p>Solusi Aplikasi Profesional untuk Bisnis & Produktivitas</p>
+    <div class="header-content">
+      <img src="https://raw.githubusercontent.com/triagungbiantoro-sketch/TechTriLabs/main/logo3.png" alt="Techtrilabs Logo">
+      <div>
+        <h1>Techtrilabs</h1>
+        <p>Solusi Aplikasi Profesional untuk Bisnis & Produktivitas</p>
+      </div>
+    </div>
     <nav>
       <a href="#features">Fitur</a>
       <a href="#download">Unduh</a>
       <a href="https://triagungbiantoro-sketch.github.io/TechTriLabs/contact.html">Kontak</a>
       <a href="https://triagungbiantoro-sketch.github.io/TechTriLabs/privacy.html">Kebijakan Privasi</a>
-      
-      
     </nav>
   </header>
 
@@ -183,7 +205,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Techtrilabs. All rights reserved. | <a href="#contact">Kontak Kami</a></p>
+    <p>© 2025 Techtrilabs. All rights reserved. | <a href="https://triagungbiantoro-sketch.github.io/TechTriLabs/contact.html">Kontak Kami</a></p>
   </footer>
 </body>
 </html>
